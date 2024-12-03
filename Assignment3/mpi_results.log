@@ -1,0 +1,700 @@
+Run 1: Running with 1 processes
+Element to find: 3785145
+Element 3785145 not found in the array.
+Execution time: 0.002066 seconds
+
+Run 2: Running with 1 processes
+Element to find: 2181763
+Element 2181763 not found in the array.
+Execution time: 0.002033 seconds
+
+Run 3: Running with 1 processes
+Element to find: 2473612
+Element 2473612 not found in the array.
+Execution time: 0.002114 seconds
+
+Run 4: Running with 1 processes
+Element to find: 3665533
+Element 3665533 not found in the array.
+Execution time: 0.002042 seconds
+
+Run 5: Running with 1 processes
+Element to find: 95885
+Global index of element 95885 is: 494519
+Execution time: 0.001031 seconds
+
+Run 6: Running with 1 processes
+Element to find: 4467395
+Element 4467395 not found in the array.
+Execution time: 0.002102 seconds
+
+Run 7: Running with 1 processes
+Element to find: 4659466
+Element 4659466 not found in the array.
+Execution time: 0.002040 seconds
+
+Run 8: Running with 1 processes
+Element to find: 659280
+Element 659280 not found in the array.
+Execution time: 0.002013 seconds
+
+Run 9: Running with 1 processes
+Element to find: 526180
+Element 526180 not found in the array.
+Execution time: 0.002020 seconds
+
+Run 10: Running with 1 processes
+Element to find: 249158
+Element 249158 not found in the array.
+Execution time: 0.002023 seconds
+
+Run 11: Running with 1 processes
+Element to find: 4950025
+Element 4950025 not found in the array.
+Execution time: 0.002014 seconds
+
+Run 12: Running with 1 processes
+Element to find: 2139808
+Element 2139808 not found in the array.
+Execution time: 0.002152 seconds
+
+Run 13: Running with 1 processes
+Element to find: 2237405
+Element 2237405 not found in the array.
+Execution time: 0.002018 seconds
+
+Run 14: Running with 1 processes
+Element to find: 4617117
+Global index of element 4617117 is: 54651
+Execution time: 0.000161 seconds
+
+Run 15: Running with 1 processes
+Element to find: 525135
+Element 525135 not found in the array.
+Execution time: 0.002084 seconds
+
+Run 16: Running with 1 processes
+Element to find: 4574812
+Element 4574812 not found in the array.
+Execution time: 0.002011 seconds
+
+Run 17: Running with 1 processes
+Element to find: 1035701
+Element 1035701 not found in the array.
+Execution time: 0.002154 seconds
+
+Run 18: Running with 1 processes
+Element to find: 3819467
+Global index of element 3819467 is: 613331
+Execution time: 0.001277 seconds
+
+Run 19: Running with 1 processes
+Element to find: 4945835
+Element 4945835 not found in the array.
+Execution time: 0.001994 seconds
+
+Run 20: Running with 1 processes
+Element to find: 2480035
+Global index of element 2480035 is: 699521
+Execution time: 0.001436 seconds
+
+Run 1: Running with 2 processes
+Element to find: 1974757
+Element 1974757 not found in the array.
+Execution time: 0.003550 seconds
+
+Run 2: Running with 2 processes
+Element to find: 1652085
+Element 1652085 not found in the array.
+Execution time: 0.003537 seconds
+
+Run 3: Running with 2 processes
+Element to find: 4408524
+Element 4408524 not found in the array.
+Execution time: 0.004017 seconds
+
+Run 4: Running with 2 processes
+Element to find: 2992689
+Element 2992689 not found in the array.
+Execution time: 0.003464 seconds
+
+Run 5: Running with 2 processes
+Element to find: 4424362
+Global index of element 4424362 is: 468539
+Execution time: 0.003562 seconds
+
+Run 6: Running with 2 processes
+Element to find: 3653722
+Element 3653722 not found in the array.
+Execution time: 0.003511 seconds
+
+Run 7: Running with 2 processes
+Element to find: 406098
+Element 406098 not found in the array.
+Execution time: 0.003371 seconds
+
+Run 8: Running with 2 processes
+Element to find: 1380883
+Element 1380883 not found in the array.
+Execution time: 0.003891 seconds
+
+Run 9: Running with 2 processes
+Element to find: 1901823
+Element 1901823 not found in the array.
+Execution time: 0.003362 seconds
+
+Run 10: Running with 2 processes
+Element to find: 149276
+Global index of element 149276 is: 843778
+Execution time: 0.003553 seconds
+
+Run 11: Running with 2 processes
+Element to find: 2053545
+Element 2053545 not found in the array.
+Execution time: 0.003792 seconds
+
+Run 12: Running with 2 processes
+Element to find: 207357
+Element 207357 not found in the array.
+Execution time: 0.003578 seconds
+
+Run 13: Running with 2 processes
+Element to find: 3331939
+Global index of element 3331939 is: 110377
+Execution time: 0.003682 seconds
+
+Run 14: Running with 2 processes
+Element to find: 2043479
+Element 2043479 not found in the array.
+Execution time: 0.003622 seconds
+
+Run 15: Running with 2 processes
+Element to find: 3831517
+Element 3831517 not found in the array.
+Execution time: 0.003488 seconds
+
+Run 16: Running with 2 processes
+Element to find: 4280245
+Element 4280245 not found in the array.
+Execution time: 0.003507 seconds
+
+Run 17: Running with 2 processes
+Element to find: 4764138
+Element 4764138 not found in the array.
+Execution time: 0.003670 seconds
+
+Run 18: Running with 2 processes
+Element to find: 4695407
+Element 4695407 not found in the array.
+Execution time: 0.003686 seconds
+
+Run 19: Running with 2 processes
+Element to find: 2093929
+Element 2093929 not found in the array.
+Execution time: 0.004202 seconds
+
+Run 20: Running with 2 processes
+Element to find: 4888320
+Element 4888320 not found in the array.
+Execution time: 0.003514 seconds
+
+Run 1: Running with 4 processes
+Element to find: 1273268
+Element 1273268 not found in the array.
+Execution time: 0.311021 seconds
+
+Run 2: Running with 4 processes
+Element to find: 623455
+Element 623455 not found in the array.
+Execution time: 0.008787 seconds
+
+Run 3: Running with 4 processes
+Element to find: 2932885
+Global index of element 2932885 is: 211537
+Execution time: 0.009061 seconds
+
+Run 4: Running with 4 processes
+Element to find: 1590116
+Global index of element 1590116 is: 710781
+Execution time: 0.007110 seconds
+
+Run 5: Running with 4 processes
+Element to find: 1302352
+Element 1302352 not found in the array.
+Execution time: 0.007265 seconds
+
+Run 6: Running with 4 processes
+Element to find: 291971
+Global index of element 291971 is: 138339
+Execution time: 0.008041 seconds
+
+Run 7: Running with 4 processes
+Element to find: 4664585
+Element 4664585 not found in the array.
+Execution time: 0.007847 seconds
+
+Run 8: Running with 4 processes
+Element to find: 4580326
+Global index of element 4580326 is: 776341
+Execution time: 0.007371 seconds
+
+Run 9: Running with 4 processes
+Element to find: 2084829
+Global index of element 2084829 is: 331167
+Execution time: 0.008056 seconds
+
+Run 10: Running with 4 processes
+Element to find: 3398864
+Element 3398864 not found in the array.
+Execution time: 0.007586 seconds
+
+Run 11: Running with 4 processes
+Element to find: 2460610
+Element 2460610 not found in the array.
+Execution time: 0.051806 seconds
+
+Run 12: Running with 4 processes
+Element to find: 4459707
+Element 4459707 not found in the array.
+Execution time: 0.007622 seconds
+
+Run 13: Running with 4 processes
+Element to find: 4197523
+Element 4197523 not found in the array.
+Execution time: 0.008645 seconds
+
+Run 14: Running with 4 processes
+Element to find: 4818411
+Global index of element 4818411 is: 566616
+Execution time: 0.043247 seconds
+
+Run 15: Running with 4 processes
+Element to find: 2284394
+Element 2284394 not found in the array.
+Execution time: 0.007428 seconds
+
+Run 16: Running with 4 processes
+Element to find: 4485754
+Global index of element 4485754 is: 790542
+Execution time: 0.007350 seconds
+
+Run 17: Running with 4 processes
+Element to find: 1313367
+Global index of element 1313367 is: 465229
+Execution time: 0.008506 seconds
+
+Run 18: Running with 4 processes
+Element to find: 4440644
+Element 4440644 not found in the array.
+Execution time: 0.008030 seconds
+
+Run 19: Running with 4 processes
+Element to find: 4668696
+Element 4668696 not found in the array.
+Execution time: 0.008223 seconds
+
+Run 20: Running with 4 processes
+Element to find: 2046683
+Global index of element 2046683 is: 124713
+Execution time: 0.008015 seconds
+
+Run 1: Running with 8 processes
+Element to find: 106508
+Element 106508 not found in the array.
+Execution time: 0.020032 seconds
+
+Run 2: Running with 8 processes
+Element to find: 3875172
+Element 3875172 not found in the array.
+Execution time: 0.006154 seconds
+
+Run 3: Running with 8 processes
+Element to find: 1970869
+Global index of element 1970869 is: 494873
+Execution time: 0.006868 seconds
+
+Run 4: Running with 8 processes
+Element to find: 1780361
+Element 1780361 not found in the array.
+Execution time: 0.005976 seconds
+
+Run 5: Running with 8 processes
+Element to find: 3775221
+Element 3775221 not found in the array.
+Execution time: 0.036401 seconds
+
+Run 6: Running with 8 processes
+Element to find: 591897
+Element 591897 not found in the array.
+Execution time: 0.010216 seconds
+
+Run 7: Running with 8 processes
+Element to find: 1552712
+Element 1552712 not found in the array.
+Execution time: 0.006174 seconds
+
+Run 8: Running with 8 processes
+Element to find: 4463675
+Element 4463675 not found in the array.
+Execution time: 0.006071 seconds
+
+Run 9: Running with 8 processes
+Element to find: 3140887
+Element 3140887 not found in the array.
+Execution time: 0.007940 seconds
+
+Run 10: Running with 8 processes
+Element to find: 2530374
+Element 2530374 not found in the array.
+Execution time: 0.020299 seconds
+
+Run 11: Running with 8 processes
+Element to find: 925690
+Global index of element 925690 is: 805030
+Execution time: 0.008104 seconds
+
+Run 12: Running with 8 processes
+Element to find: 4249365
+Element 4249365 not found in the array.
+Execution time: 0.006597 seconds
+
+Run 13: Running with 8 processes
+Element to find: 600650
+Element 600650 not found in the array.
+Execution time: 0.006401 seconds
+
+Run 14: Running with 8 processes
+Element to find: 1197582
+Element 1197582 not found in the array.
+Execution time: 0.006711 seconds
+
+Run 15: Running with 8 processes
+Element to find: 2700716
+Element 2700716 not found in the array.
+Execution time: 0.012917 seconds
+
+Run 16: Running with 8 processes
+Element to find: 2185744
+Element 2185744 not found in the array.
+Execution time: 0.007684 seconds
+
+Run 17: Running with 8 processes
+Element to find: 2223846
+Element 2223846 not found in the array.
+Execution time: 0.039863 seconds
+
+Run 18: Running with 8 processes
+Element to find: 2256236
+Global index of element 2256236 is: 645508
+Execution time: 0.006808 seconds
+
+Run 19: Running with 8 processes
+Element to find: 1471082
+Element 1471082 not found in the array.
+Execution time: 0.009006 seconds
+
+Run 20: Running with 8 processes
+Element to find: 4122034
+Element 4122034 not found in the array.
+Execution time: 0.006435 seconds
+
+Run 1: Running with 16 processes
+Element to find: 3276357
+Element 3276357 not found in the array.
+Execution time: 0.035622 seconds
+
+Run 2: Running with 16 processes
+Element to find: 245394
+Element 245394 not found in the array.
+Execution time: 0.053911 seconds
+
+Run 3: Running with 16 processes
+Element to find: 3898444
+Global index of element 3898444 is: 165519
+Execution time: 0.046545 seconds
+
+Run 4: Running with 16 processes
+Element to find: 4163162
+Element 4163162 not found in the array.
+Execution time: 0.093340 seconds
+
+Run 5: Running with 16 processes
+Element to find: 174813
+Element 174813 not found in the array.
+Execution time: 0.021880 seconds
+
+Run 6: Running with 16 processes
+Element to find: 4487017
+Element 4487017 not found in the array.
+Execution time: 0.048847 seconds
+
+Run 7: Running with 16 processes
+Element to find: 4816366
+Element 4816366 not found in the array.
+Execution time: 0.022063 seconds
+
+Run 8: Running with 16 processes
+Element to find: 3458795
+Element 3458795 not found in the array.
+Execution time: 0.050952 seconds
+
+Run 9: Running with 16 processes
+Element to find: 4967904
+Element 4967904 not found in the array.
+Execution time: 0.044187 seconds
+
+Run 10: Running with 16 processes
+Element to find: 882231
+Element 882231 not found in the array.
+Execution time: 0.050926 seconds
+
+Run 11: Running with 16 processes
+Element to find: 2193516
+Element 2193516 not found in the array.
+Execution time: 0.020853 seconds
+
+Run 12: Running with 16 processes
+Element to find: 2858073
+Element 2858073 not found in the array.
+Execution time: 0.036280 seconds
+
+Run 13: Running with 16 processes
+Element to find: 4620469
+Global index of element 4620469 is: 888075
+Execution time: 0.047469 seconds
+
+Run 14: Running with 16 processes
+Element to find: 2687453
+Element 2687453 not found in the array.
+Execution time: 0.036377 seconds
+
+Run 15: Running with 16 processes
+Element to find: 479628
+Element 479628 not found in the array.
+Execution time: 0.035218 seconds
+
+Run 16: Running with 16 processes
+Element to find: 4513277
+Element 4513277 not found in the array.
+Execution time: 0.046056 seconds
+
+Run 17: Running with 16 processes
+Element to find: 2927536
+Global index of element 2927536 is: 184406
+Execution time: 0.076882 seconds
+
+Run 18: Running with 16 processes
+Element to find: 4187692
+Element 4187692 not found in the array.
+Execution time: 0.021104 seconds
+
+Run 19: Running with 16 processes
+Element to find: 1818169
+Element 1818169 not found in the array.
+Execution time: 0.031877 seconds
+
+Run 20: Running with 16 processes
+Element to find: 2526557
+Element 2526557 not found in the array.
+Execution time: 0.079114 seconds
+
+Run 1: Running with 32 processes
+Element to find: 2812452
+Element 2812452 not found in the array.
+Execution time: 0.096725 seconds
+
+Run 2: Running with 32 processes
+Element to find: 1044131
+Element 1044131 not found in the array.
+Execution time: 0.092574 seconds
+
+Run 3: Running with 32 processes
+Element to find: 2554317
+Global index of element 2554317 is: 121705
+Execution time: 0.065800 seconds
+
+Run 4: Running with 32 processes
+Element to find: 3099725
+Global index of element 3099725 is: 324957
+Execution time: 0.047451 seconds
+
+Run 5: Running with 32 processes
+Element to find: 2732738
+Element 2732738 not found in the array.
+Execution time: 0.049410 seconds
+
+Run 6: Running with 32 processes
+Element to find: 320378
+Element 320378 not found in the array.
+Execution time: 0.047897 seconds
+
+Run 7: Running with 32 processes
+Element to find: 1387354
+Element 1387354 not found in the array.
+Execution time: 0.062851 seconds
+
+Run 8: Running with 32 processes
+Element to find: 1855533
+Element 1855533 not found in the array.
+Execution time: 0.052083 seconds
+
+Run 9: Running with 32 processes
+Element to find: 4567300
+Element 4567300 not found in the array.
+Execution time: 0.038884 seconds
+
+Run 10: Running with 32 processes
+Element to find: 1183833
+Element 1183833 not found in the array.
+Execution time: 0.056932 seconds
+
+Run 11: Running with 32 processes
+Element to find: 2686942
+Element 2686942 not found in the array.
+Execution time: 0.042794 seconds
+
+Run 12: Running with 32 processes
+Element to find: 1746459
+Element 1746459 not found in the array.
+Execution time: 0.051337 seconds
+
+Run 13: Running with 32 processes
+Element to find: 2867204
+Element 2867204 not found in the array.
+Execution time: 0.051594 seconds
+
+Run 14: Running with 32 processes
+Element to find: 1693759
+Element 1693759 not found in the array.
+Execution time: 0.051586 seconds
+
+Run 15: Running with 32 processes
+Element to find: 3008263
+Element 3008263 not found in the array.
+Execution time: 0.042756 seconds
+
+Run 16: Running with 32 processes
+Element to find: 556624
+Element 556624 not found in the array.
+Execution time: 0.065002 seconds
+
+Run 17: Running with 32 processes
+Element to find: 2379243
+Element 2379243 not found in the array.
+Execution time: 0.065822 seconds
+
+Run 18: Running with 32 processes
+Element to find: 213016
+Element 213016 not found in the array.
+Execution time: 0.076858 seconds
+
+Run 19: Running with 32 processes
+Element to find: 2778551
+Element 2778551 not found in the array.
+Execution time: 0.051185 seconds
+
+Run 20: Running with 32 processes
+Element to find: 2890702
+Global index of element 2890702 is: 846395
+Execution time: 0.070747 seconds
+
+Run 1: Running with 64 processes
+Element to find: 3059217
+Element 3059217 not found in the array.
+Execution time: 0.709456 seconds
+
+Run 2: Running with 64 processes
+Element to find: 2004501
+Element 2004501 not found in the array.
+Execution time: 0.232649 seconds
+
+Run 3: Running with 64 processes
+Element to find: 637550
+Element 637550 not found in the array.
+Execution time: 0.130257 seconds
+
+Run 4: Running with 64 processes
+Element to find: 705746
+Element 705746 not found in the array.
+Execution time: 0.110848 seconds
+
+Run 5: Running with 64 processes
+Element to find: 810820
+Element 810820 not found in the array.
+Execution time: 0.125053 seconds
+
+Run 6: Running with 64 processes
+Element to find: 782879
+Element 782879 not found in the array.
+Execution time: 0.129422 seconds
+
+Run 7: Running with 64 processes
+Element to find: 4378828
+Element 4378828 not found in the array.
+Execution time: 0.108837 seconds
+
+Run 8: Running with 64 processes
+Element to find: 4138571
+Element 4138571 not found in the array.
+Execution time: 0.101253 seconds
+
+Run 9: Running with 64 processes
+Element to find: 2273683
+Global index of element 2273683 is: 38678
+Execution time: 0.099502 seconds
+
+Run 10: Running with 64 processes
+Element to find: 1855156
+Element 1855156 not found in the array.
+Execution time: 0.170879 seconds
+
+Run 11: Running with 64 processes
+Element to find: 2782868
+Element 2782868 not found in the array.
+Execution time: 0.107219 seconds
+
+Run 12: Running with 64 processes
+Element to find: 4245902
+Element 4245902 not found in the array.
+Execution time: 0.112918 seconds
+
+Run 13: Running with 64 processes
+Element to find: 2237362
+Element 2237362 not found in the array.
+Execution time: 0.136949 seconds
+
+Run 14: Running with 64 processes
+Element to find: 4682541
+Element 4682541 not found in the array.
+Execution time: 0.100034 seconds
+
+Run 15: Running with 64 processes
+Element to find: 2972940
+Element 2972940 not found in the array.
+Execution time: 0.131426 seconds
+
+Run 16: Running with 64 processes
+Element to find: 4060693
+Element 4060693 not found in the array.
+Execution time: 0.152161 seconds
+
+Run 17: Running with 64 processes
+Element to find: 571134
+Global index of element 571134 is: 811607
+Execution time: 0.150171 seconds
+
+Run 18: Running with 64 processes
+Element to find: 3719100
+Element 3719100 not found in the array.
+Execution time: 0.199623 seconds
+
+Run 19: Running with 64 processes
+Element to find: 1998070
+Global index of element 1998070 is: 170391
+Execution time: 0.113473 seconds
+
+Run 20: Running with 64 processes
+Element to find: 3903403
+Element 3903403 not found in the array.
+Execution time: 0.110665 seconds
+

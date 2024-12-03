@@ -1,0 +1,314 @@
+Run 1: Running with 1 threads and array size 10000
+Execution time: 0.00010364 seconds
+
+Run 2: Running with 1 threads and array size 10000
+Execution time: 0.00010346 seconds
+
+Run 3: Running with 1 threads and array size 10000
+Execution time: 9.469e-05 seconds
+
+Run 4: Running with 1 threads and array size 10000
+Execution time: 9.746e-05 seconds
+
+Run 5: Running with 1 threads and array size 10000
+Execution time: 0.00010069 seconds
+
+Run 1: Running with 1 threads and array size 20000
+Execution time: 0.000196941 seconds
+
+Run 2: Running with 1 threads and array size 20000
+Execution time: 0.000187591 seconds
+
+Run 3: Running with 1 threads and array size 20000
+Execution time: 0.000195071 seconds
+
+Run 4: Running with 1 threads and array size 20000
+Execution time: 0.000199651 seconds
+
+Run 5: Running with 1 threads and array size 20000
+Execution time: 0.000181581 seconds
+
+Run 1: Running with 1 threads and array size 30000
+Execution time: 0.000270411 seconds
+
+Run 2: Running with 1 threads and array size 30000
+Execution time: 0.000268071 seconds
+
+Run 3: Running with 1 threads and array size 30000
+Execution time: 0.000258131 seconds
+
+Run 4: Running with 1 threads and array size 30000
+Execution time: 0.000255752 seconds
+
+Run 5: Running with 1 threads and array size 30000
+Execution time: 0.000264971 seconds
+
+Run 1: Running with 2 threads and array size 10000
+Execution time: 0.000157801 seconds
+
+Run 2: Running with 2 threads and array size 10000
+Execution time: 0.000139421 seconds
+
+Run 3: Running with 2 threads and array size 10000
+Execution time: 0.000143511 seconds
+
+Run 4: Running with 2 threads and array size 10000
+Execution time: 0.000146191 seconds
+
+Run 5: Running with 2 threads and array size 10000
+Execution time: 0.000135111 seconds
+
+Run 1: Running with 2 threads and array size 20000
+Execution time: 0.000208021 seconds
+
+Run 2: Running with 2 threads and array size 20000
+Execution time: 0.000227732 seconds
+
+Run 3: Running with 2 threads and array size 20000
+Execution time: 0.000218132 seconds
+
+Run 4: Running with 2 threads and array size 20000
+Execution time: 0.000215281 seconds
+
+Run 5: Running with 2 threads and array size 20000
+Execution time: 0.000214091 seconds
+
+Run 1: Running with 2 threads and array size 30000
+Execution time: 0.000290852 seconds
+
+Run 2: Running with 2 threads and array size 30000
+Execution time: 0.000287092 seconds
+
+Run 3: Running with 2 threads and array size 30000
+Execution time: 0.000298812 seconds
+
+Run 4: Running with 2 threads and array size 30000
+Execution time: 0.000348762 seconds
+
+Run 5: Running with 2 threads and array size 30000
+Execution time: 0.000285052 seconds
+
+Run 1: Running with 4 threads and array size 10000
+Execution time: 0.000234031 seconds
+
+Run 2: Running with 4 threads and array size 10000
+Execution time: 0.000225152 seconds
+
+Run 3: Running with 4 threads and array size 10000
+Execution time: 0.000183201 seconds
+
+Run 4: Running with 4 threads and array size 10000
+Execution time: 0.000191111 seconds
+
+Run 5: Running with 4 threads and array size 10000
+Execution time: 0.000178161 seconds
+
+Run 1: Running with 4 threads and array size 20000
+Execution time: 0.000232932 seconds
+
+Run 2: Running with 4 threads and array size 20000
+Execution time: 0.000483253 seconds
+
+Run 3: Running with 4 threads and array size 20000
+Execution time: 0.000235741 seconds
+
+Run 4: Running with 4 threads and array size 20000
+Execution time: 0.000287561 seconds
+
+Run 5: Running with 4 threads and array size 20000
+Execution time: 0.000225481 seconds
+
+Run 1: Running with 4 threads and array size 30000
+Execution time: 0.000306551 seconds
+
+Run 2: Running with 4 threads and array size 30000
+Execution time: 0.000378802 seconds
+
+Run 3: Running with 4 threads and array size 30000
+Execution time: 0.000285002 seconds
+
+Run 4: Running with 4 threads and array size 30000
+Execution time: 0.000305552 seconds
+
+Run 5: Running with 4 threads and array size 30000
+Execution time: 0.000284662 seconds
+
+Run 1: Running with 8 threads and array size 10000
+Execution time: 0.000324782 seconds
+
+Run 2: Running with 8 threads and array size 10000
+Execution time: 0.000300702 seconds
+
+Run 3: Running with 8 threads and array size 10000
+Execution time: 0.000342932 seconds
+
+Run 4: Running with 8 threads and array size 10000
+Execution time: 0.000303482 seconds
+
+Run 5: Running with 8 threads and array size 10000
+Execution time: 0.000288192 seconds
+
+Run 1: Running with 8 threads and array size 20000
+Execution time: 0.000327991 seconds
+
+Run 2: Running with 8 threads and array size 20000
+Execution time: 0.000346302 seconds
+
+Run 3: Running with 8 threads and array size 20000
+Execution time: 0.000336152 seconds
+
+Run 4: Running with 8 threads and array size 20000
+Execution time: 0.000333092 seconds
+
+Run 5: Running with 8 threads and array size 20000
+Execution time: 0.000378663 seconds
+
+Run 1: Running with 8 threads and array size 30000
+Execution time: 0.000368303 seconds
+
+Run 2: Running with 8 threads and array size 30000
+Execution time: 0.000358282 seconds
+
+Run 3: Running with 8 threads and array size 30000
+Execution time: 0.000367053 seconds
+
+Run 4: Running with 8 threads and array size 30000
+Execution time: 0.000379772 seconds
+
+Run 5: Running with 8 threads and array size 30000
+Execution time: 0.000376602 seconds
+
+Run 1: Running with 16 threads and array size 10000
+Execution time: 0.000542023 seconds
+
+Run 2: Running with 16 threads and array size 10000
+Execution time: 0.000532013 seconds
+
+Run 3: Running with 16 threads and array size 10000
+Execution time: 0.000532693 seconds
+
+Run 4: Running with 16 threads and array size 10000
+Execution time: 0.000500582 seconds
+
+Run 5: Running with 16 threads and array size 10000
+Execution time: 0.000504843 seconds
+
+Run 1: Running with 16 threads and array size 20000
+Execution time: 0.000508813 seconds
+
+Run 2: Running with 16 threads and array size 20000
+Execution time: 0.000562003 seconds
+
+Run 3: Running with 16 threads and array size 20000
+Execution time: 0.000523723 seconds
+
+Run 4: Running with 16 threads and array size 20000
+Execution time: 0.000523044 seconds
+
+Run 5: Running with 16 threads and array size 20000
+Execution time: 0.000643654 seconds
+
+Run 1: Running with 16 threads and array size 30000
+Execution time: 0.000599244 seconds
+
+Run 2: Running with 16 threads and array size 30000
+Execution time: 0.000649903 seconds
+
+Run 3: Running with 16 threads and array size 30000
+Execution time: 0.000611904 seconds
+
+Run 4: Running with 16 threads and array size 30000
+Execution time: 0.000552963 seconds
+
+Run 5: Running with 16 threads and array size 30000
+Execution time: 0.000595173 seconds
+
+Run 1: Running with 32 threads and array size 10000
+Execution time: 0.0412571 seconds
+
+Run 2: Running with 32 threads and array size 10000
+Execution time: 0.0278943 seconds
+
+Run 3: Running with 32 threads and array size 10000
+Execution time: 0.0347769 seconds
+
+Run 4: Running with 32 threads and array size 10000
+Execution time: 0.0481182 seconds
+
+Run 5: Running with 32 threads and array size 10000
+Execution time: 0.0349317 seconds
+
+Run 1: Running with 32 threads and array size 20000
+Execution time: 0.0410937 seconds
+
+Run 2: Running with 32 threads and array size 20000
+Execution time: 0.0316844 seconds
+
+Run 3: Running with 32 threads and array size 20000
+Execution time: 0.0470374 seconds
+
+Run 4: Running with 32 threads and array size 20000
+Execution time: 0.0328012 seconds
+
+Run 5: Running with 32 threads and array size 20000
+Execution time: 0.0276557 seconds
+
+Run 1: Running with 32 threads and array size 30000
+Execution time: 0.0525543 seconds
+
+Run 2: Running with 32 threads and array size 30000
+Execution time: 0.0283445 seconds
+
+Run 3: Running with 32 threads and array size 30000
+Execution time: 0.0451086 seconds
+
+Run 4: Running with 32 threads and array size 30000
+Execution time: 0.0411236 seconds
+
+Run 5: Running with 32 threads and array size 30000
+Execution time: 0.051391 seconds
+
+Run 1: Running with 64 threads and array size 10000
+Execution time: 0.00242646 seconds
+
+Run 2: Running with 64 threads and array size 10000
+Execution time: 0.00212965 seconds
+
+Run 3: Running with 64 threads and array size 10000
+Execution time: 0.00219669 seconds
+
+Run 4: Running with 64 threads and array size 10000
+Execution time: 0.00226491 seconds
+
+Run 5: Running with 64 threads and array size 10000
+Execution time: 0.00257798 seconds
+
+Run 1: Running with 64 threads and array size 20000
+Execution time: 0.0022151 seconds
+
+Run 2: Running with 64 threads and array size 20000
+Execution time: 0.00224079 seconds
+
+Run 3: Running with 64 threads and array size 20000
+Execution time: 0.00225517 seconds
+
+Run 4: Running with 64 threads and array size 20000
+Execution time: 0.00235156 seconds
+
+Run 5: Running with 64 threads and array size 20000
+Execution time: 0.00221859 seconds
+
+Run 1: Running with 64 threads and array size 30000
+Execution time: 0.00246782 seconds
+
+Run 2: Running with 64 threads and array size 30000
+Execution time: 0.00292995 seconds
+
+Run 3: Running with 64 threads and array size 30000
+Execution time: 0.00241863 seconds
+
+Run 4: Running with 64 threads and array size 30000
+Execution time: 0.00241659 seconds
+
+Run 5: Running with 64 threads and array size 30000
+Execution time: 0.0023897 seconds
