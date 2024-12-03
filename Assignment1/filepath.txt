@@ -1,0 +1,8 @@
+tests_Q1\input_product.csv
+tests_Q1\input_customer.csv
+tests_Q2\input_price.csv
+tests_Q2\input_groups.csv
+tests_Q3\output.0.csv
+tests_Q3\output.1.csv
+tests_Q3\output.2.csv
+tests_Q3\input_newhashtags.csv

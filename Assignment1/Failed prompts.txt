@@ -1,0 +1,427 @@
+Failed prompts    
+// #PROMPT# Write a code snippet that takes customerPurchases and adds the product hashtags of each product purchased by the customer to a data structure. Write the code below:
+    vector<pair<string,vector<string>>> customerHashtags;
+    for(int i=0;i<customerPurchases.size();i++){
+        string customer = customerPurchases[i].first;
+        string product = customerPurchases[i].second;
+        vector<string> hashtags;
+        for(int j=0;j<productHashtags.size();j++){
+            if(productHashtags[j].first == product){
+                hashtags = productHashtags[j].second;
+                break;
+            }
+        }
+        customerHashtags.push_back(make_pair(customer,hashtags));
+    }
+    
+
+
+    // #PROMPT# Write a code snippet that takes customerPurchases and adds the product hashtags of each product purchased by the customer. This new variable should be an array of customers with all their hashtags and the count of each hashtag. If the hashtags is repeated, the count for the certain hashtag increases. Write the code below:
+    vector<pair<string,vector<string>>> customerHashtags;
+    for(int i=0;i<customerPurchases.size();i++){
+        string customer = customerPurchases[i].first;
+        string product = customerPurchases[i].second;
+        vector<string> prodHashtags;
+        for(int j=0;j<productHashtags.size();j++){
+            if(productHashtags[j].first == product){
+                prodHashtags = productHashtags[j].second;
+                break;
+            }
+        }
+        bool found = false;
+        for(int j=0;j<customerHashtags.size();j++){
+            if(customerHashtags[j].first == customer){
+                found = true;
+                for(int k=0;k<prodHashtags.size();k++){
+                    bool foundHashtag = false;
+                    for(int l=0;l<customerHashtags[j].second.size();l++){
+                        if(customerHashtags[j].second[l] == prodHashtags[k]){
+                            foundHashtag = true;
+                            break;
+                        }
+                    }
+                    if(foundHashtag){
+                        continue;
+                    }
+                    customerHashtags[j].second.push_back(prodHashtags[k]);
+                }
+                break;
+            }
+        }
+        if(!found){
+            customerHashtags.push_back(make_pair(customer,prodHashtags));
+        }
+    }
+
+        // #PROMPT# Write a code snippet that takes customerPurchases and iterates through it to create a map of customers and their hashtags. Write the code below:
+    map<string,vector<string>> customerHashtags;
+    for(auto purchase:customerPurchases){
+        string customer = purchase.first;
+        string product = purchase.second;
+        for(auto prodHashtags:productHashtags){
+            if(prodHashtags.first == product){
+                for(auto hashtag:prodHashtags.second){
+                    customerHashtags[customer].push_back(hashtag);
+                }
+            }
+        }
+    }
+
+
+        // #PROMPT# Write a code snippet that takes customerPurchases and productHashtags and iterates through them. Each entry in the array is a customer id followed by a map. This map is the hashtag followed by the number of times it is associated with the ceratin customer. Don't use a map for outer array as customer id will not be unique. Write the code below:
+    vector<pair<string,map<string,int>>> customerHashtags;
+    for(int i=0;i<customerPurchases.size();i++){
+        string customer = customerPurchases[i].first;
+        string product = customerPurchases[i].second;
+        map<string,int> hashtagCount;
+        for(int j=0;j<productHashtags.size();j++){
+            if(productHashtags[j].first == product){
+                for(int k=0;k<productHashtags[j].second.size();k++){
+                    hashtagCount[productHashtags[j].second[k]]++;
+                }
+            }
+        }
+        customerHashtags.push_back(make_pair(customer,hashtagCount));
+    }
+
+
+        // #PROMPT# Now that we have grouped the customers based on the top k hashtags, we can now write the output to a file. The output should contain the customer ids of the customers in each group. Each group should be written on a new line in the file. The customer ids in each group should be separated by commas. Write the code below:
+    vector<vector<string>> groups(group);
+    for(auto customer:customerGroup){
+        groups[customer.second-1].push_back(customer.first);
+    }
+    for(auto group:groups){
+        string line = "";
+        for(auto customer:group){
+            line += customer + ",";
+        }
+        line.pop_back();
+        writeOutputToFile(line,outputFilePath);
+    }
+
+
+
+
+
+
+======================================================
+
+void groupCustomersByHashtags(fileIterator& hashtags, fileIterator& purchases,fileIterator& prices, int k, string outputFilePath)
+{
+    //Use this to log compute time    
+    auto start = high_resolution_clock::now();
+    //  Write your code here
+
+    //This function takes in 5 parameters.
+    // 1. hashtags: This is a fileIterator object which is a file of products and their associated hashtags.
+    /**   
+     * The file is a CSV file with the following format:
+     * product1,hashtag1,hashtag2,hashtag3
+     * product2,hashtag1,hashtag2,hashtag3
+     * product3,hashtag1,hashtag2,hashtag3
+     * etc.
+     * */
+    // 2. purchases: This is a fileIterator object which is a file of customers and their purchases.
+    /**   
+     * The file is a CSV file with the following format:
+     * customer1,product1
+     * customer1,product3
+     * customer2,product3
+     * customer3,product1
+     * customer1,product2
+     * customer2,product2
+     * etc.
+     * */
+    // 3. prices: This is a fileIterator object which is a file of products and their prices.
+    /**   
+     * The file is a CSV file with the following format:
+     * product1,price1
+     * product2,price2
+     * product3,price3
+     * etc.
+     * */
+    // 4. k: This is an integer which tells us to compare the top k hashtags of each customer to group them.
+    // 5. outputFilePath: This is a string which tells us the path to write the output to.
+
+    //Each fileIterator object has a function called next() which returns the next line in the file.
+    //Each fileIterator object has a function called hasNext() which returns a boolean value based on whether there are more lines in the file or not.
+
+    // The function groups customers based on the hashtags of the products they have purchased.
+
+    // The function writes the output to a file. The file should contain the customer ids of the customers in each group.
+    // Each group should be written on a new line in the file.
+    // The customer ids in each group should be separated by commas.
+
+    // #PROMPT# Write a code snippet to extract all the lines from the hashtags file and store them in a appropriate data structure. Write the code below:
+    vector<pair<string,vector<string>>> productHashtags;
+    while(hashtags.hasNext()){
+        string line = hashtags.next();
+        vector<string> tokens = split(line,',');
+        string product = tokens[0];
+        vector<string> prodHashtags;
+        for(int i=1;i<tokens.size();i++){
+            prodHashtags.push_back(tokens[i]);
+        }
+        productHashtags.push_back(make_pair(product,prodHashtags));
+    }
+
+    // #PROMPT# Write a code snippet to extract all the lines from the purchases file and store them in a appropriate data structure. Write the code below:
+    vector<pair<string,string>> customerPurchases;
+    while(purchases.hasNext()){
+        string line = purchases.next();
+        vector<string> tokens = split(line,',');
+        string customer = tokens[0];
+        string product = tokens[1];
+        customerPurchases.push_back(make_pair(customer,product));
+    }
+
+    // #PROMPT# Make a map of customer id to an array of tuples. This array has elements of the form (hashtag, count) where count is the number of times the customer has purchased a product with that hashtag. Write the code below:
+    map<string,vector<pair<string,int>>> customerHashtags;
+    for(auto purchase:customerPurchases){
+        string customer = purchase.first;
+        string product = purchase.second;
+        for(auto prodHashtags:productHashtags){
+            if(prodHashtags.first == product){
+                for(auto hashtag:prodHashtags.second){
+                    if(customerHashtags.find(customer) == customerHashtags.end()){
+                        vector<pair<string,int>> temp;
+                        temp.push_back(make_pair(hashtag,1));
+                        customerHashtags[customer] = temp;
+                    }
+                    else{
+                        bool found = false;
+                        for(auto& tag:customerHashtags[customer]){
+                            if(tag.first == hashtag){
+                                tag.second++;
+                                found = true;
+                                break;
+                            }
+                        }
+                        if(!found){
+                            customerHashtags[customer].push_back(make_pair(hashtag,1));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // #PROMPT# Now that we have a map of the customer ids to the hashtags they are associated with, iterate through each array of tuples and sort them based on the count of the hashtags. Write the code below:
+    for(auto& customer:customerHashtags){
+        sort(customer.second.begin(),customer.second.end(),[](pair<string,int> a,pair<string,int> b){
+            return a.second > b.second;
+        });
+    }
+
+    // #PROMPT# Now that we have sorted the hashtags based on the count, we can now group the customers based on the top k hashtags. Create another map of customer ids to hashtags. The key should be customer id and the value is a vector of strings which are the top k hashtags. Write the code below:
+    map<string,vector<string>> customerTopKHashtags;
+    for(auto customer:customerHashtags){
+        vector<string> topK;
+        for(int i=0;i<k && i<customer.second.size();i++){
+            topK.push_back(customer.second[i].first);
+        }
+        customerTopKHashtags[customer.first] = topK;
+    }
+
+    // #PROMPT# Now that we have the top k hashtags for each customer, we can now group the customers based on the top k hashtags. Create a map of customer ids to the group they belong to. The key should be the customer id and the value should be the group id. Go through the previous map of customerTopKHashtags and compare the top k hashtags of each customer with the top k hashtags of other customers. If the top k hashtags of two customers match, they belong to the same group. Sort the top k hashtags of each customer and compare them with the top k hashtags of other customers. If they match, they belong to the same group. Write the code below:
+    map<string,int> customerGroup;
+    int group = 1;
+    for(auto customer1:customerTopKHashtags){
+        if(customerGroup.find(customer1.first) == customerGroup.end()){
+            customerGroup[customer1.first] = group;
+        }
+        for(auto customer2:customerTopKHashtags){
+            if(customer1.first != customer2.first){
+                vector<string> topK1 = customer1.second;
+                vector<string> topK2 = customer2.second;
+                sort(topK1.begin(),topK1.end());
+                sort(topK2.begin(),topK2.end());
+                if(topK1 == topK2){
+                    customerGroup[customer2.first] = group;
+                }
+            }
+        }
+        group++;
+    }
+
+    // #PROMPT# Now that we have grouped the customers based on the top k hashtags, we can now write the output to a file. For each group, write the customer ids of the customers in a vector of integers, i.e. customer ids. Call the writeOutputToFile function for each group. Write the code below:
+    for(int i=1;i<group;i++){
+        vector<int> group;
+        for(auto customer:customerGroup){
+            if(customer.second == i){
+                group.push_back(stoi(customer.first));
+            }
+        }
+        writeOutputToFile(group,outputFilePath);
+    }
+
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+    cout << "Time taken by compute part of the function: "<< duration.count() << " microseconds" << endl;
+
+    // Use the below utility function to write the output to a file
+    // Call this function for every group as a vector of integers
+    // vector<int> group;
+    // writeOutputToFile(group, outputFilePath);
+    //Free all variables used from memory
+    productHashtags.clear();
+    customerPurchases.clear();
+    customerHashtags.clear();
+    customerTopKHashtags.clear();
+    customerGroup.clear();
+    
+    return;
+}
+
+
+//MAKE THE CODE WITHOUT SEGMENTATION FAULT
+
+
+//NO FAILED STUFF FOR QUESTION 2
+
+
+//QUESTION 3:
+
+
+
+
+
+
+///PROINDFOIVHSOFDUVHSIDHV
+
+# Write a shell script to iterate through exp1, 2, 3, 4, 5 and go through each subexp and give inputs to the main.cpp file and store outputs in a log file
+# The log file should be named as exp1.subexp1.log, exp1.subexp2.log, exp2.subexp1.log, exp2.subexp2.log, etc.
+# The log file should contain the output of the main.cpp file
+# The log file should also contain the time taken to run the main.cpp file
+# The log file should also contain the memory used by the main.cpp file
+# The log file should also contain the number of threads used by the main.cpp file
+
+# The main.cpp file should take the following inputs:
+# 1. exp1/subexp1/pur8product.csv
+# 2. exp1/subexp1/pur8customer.csv
+# 3. tests_Q2/input_price.csv
+# 4. tests_Q2/input_groups.csv
+# 5. exp1/subexp1/pur8output.csv
+# 6. tests_Q2/output_price.csv
+# 7. tests_Q2/output_groups.csv
+# 8. tests_Q2/new_hashtags.csv
+
+#For the first experiment, the script should run the main.cpp file on subexp1, subexp2, subexp3, and subexp4 and store the outputs in the log files
+#For the second experiment, the script should run the main.cpp file on subexp1, subexp2, subexp3, and subexp4 and store the outputs in the log files
+#For the third experiment, the script should run the main.cpp file on subexp1, subexp2, and subexp3 and store the outputs in the log files
+#For the fourth experiment, the script should run the main.cpp file on subexp1, subexp2, and subexp3 and store the outputs in the log files
+#For the fifth experiment, the script should run the main.cpp file on subexp1, subexp2, and subexp3 and store the outputs in the log files
+
+# The script should also store the time taken to run the main.cpp file in the log files
+# The script should also store the memory used by the main.cpp file in the log files
+# Write the shell script in the master.sh file
+
+#Write the script here
+#exp1
+#For each subexp, vary the input files as pur8product.csv, pur8customer.csv, pur8output.csv; pur32product.csv, pur32customer.csv, pur32output.csv; pur128product.csv, pur128customer.csv, pur128output.csv; pur512product.csv, pur512customer.csv, pur512output.csv, respectively
+#For each subexp, the output files are pur8output.csv, pur32output.csv, pur128output.csv, pur512output.csv, respectively
+#exp2
+#For each subexp, vary the input files customer {4,8,16,32,64} and pur {8, 32, 128, 512 2048}.
+#The file names will be customer{i}pur{j}customer.csv and customer{i}pur{j}product.csv and the output will be customer{i}pur{j}output.csv
+#exp3
+#For each subexp, vary the input files as customer {4,8,16,32,64} and pur {8, 32, 128, 512 2048}.
+#The file names will be customer{i}pur{j}customer.csv and customer{i}pur{j}product.csv and the output will be customer{i}pur{j}output.csv
+#exp4
+#For each subexp, vary the input files as customer {4,8,16,32,64} and pur {8, 32, 128, 512 2048}.
+#The file names will be customer{i}pur{j}customer.csv and customer{i}pur{j}product.csv and the output will be customer{i}pur{j}output.csv
+#exp5
+#For each subexp, vary the input files as customer {4,8,16,32,64} and pur {8, 32, 128, 512 2048}.
+#The file names will be customer{i}pur{j}customer.csv and customer{i}pur{j}product.csv and the output will be customer{i}pur{j}output.csv
+
+#exp1
+for i in {1..4}
+do
+    for j in 8 32 128 512 2048
+    do
+        ./main exp1/subexp$i/pur${j}product.csv exp1/subexp$i/pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp1/subexp$i/pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp1/subexp$i/pur$j.log
+    done
+done
+
+#exp2
+for i in {1..4}
+do
+    for j in 8 32 128 512 2048
+    do
+        ./main exp2/subexp$i/customer4pur${j}product.csv exp2/subexp$i/customer4pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp2/subexp$i/customer4pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp2.subexp$i.customer4pur$j.log
+        ./main exp2/subexp$i/customer8pur${j}product.csv exp2/subexp$i/customer8pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp2/subexp$i/customer8pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp2.subexp$i.customer8pur$j.log
+        #Execute the following only if j is not 8
+        if [ $j -ne 8 ]
+        then
+        ./main exp2/subexp$i/customer16pur${j}product.csv exp2/subexp$i/customer16pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp2/subexp$i/customer16pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp2.subexp$i.customer16pur$j.log
+        ./main exp2/subexp$i/customer32pur${j}product.csv exp2/subexp$i/customer32pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp2/subexp$i/customer32pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp2.subexp$i.customer32pur$j.log
+        #Execute the following only if j is not 8 or 32
+        if [ $j -ne 32 ]
+        then
+            ./main exp2/subexp$i/customer64pur${j}product.csv exp2/subexp$i/customer64pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp2/subexp$i/customer64pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp2.subexp$i.customer64pur$j.log
+        fi
+        fi
+    done
+done
+
+#exp3
+for i in {1..3}
+do
+    for j in 8 32 128 512 2048
+    do
+        ./main exp3/subexp$i/customer4pur${j}product.csv exp3/subexp$i/customer4pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp$i/customer4pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp3.subexp$i.customer4pur$j.log
+        ./main exp3/subexp$i/customer8pur${j}product.csv exp3/subexp$i/customer8pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp$i/customer8pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp3.subexp$i.customer8pur$j.log
+        #Execute the following only if j is not 8
+        if [ $j -ne 8 ]
+        then
+        ./main exp3/subexp$i/customer16pur${j}product.csv exp3/subexp$i/customer16pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp$i/customer16pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp3.subexp$i.customer16pur$j.log
+        ./main exp3/subexp$i/customer32pur${j}product.csv exp3/subexp$i/customer32pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp$i/customer32pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp3.subexp$i.customer32pur$j.log
+        #Execute the following only if j is not 8 or 32
+        if [ $j -ne 32 ]
+        then
+            ./main exp3/subexp$i/customer64pur${j}product.csv exp3/subexp$i/customer64pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp$i/customer64pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp3.subexp$i.customer64pur$j.log
+        fi
+        fi
+    done
+done
+
+#exp4
+for i in {1..3}
+do
+    for j in 8 32 128 512 2048
+    do
+        ./main exp4/subexp$i/customer4pur${j}product.csv exp4/subexp$i/customer4pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp4/subexp$i/customer4pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp4.subexp$i.customer4pur$j.log
+        ./main exp4/subexp$i/customer8pur${j}product.csv exp4/subexp$i/customer8pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp4/subexp$i/customer8pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp4.subexp$i.customer8pur$j.log
+        #Execute the following only if j is not 8
+        if [ $j -ne 8 ]
+        then
+        ./main exp4/subexp$i/customer16pur${j}product.csv exp4/subexp$i/customer16pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp4/subexp$i/customer16pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp4.subexp$i.customer16pur$j.log
+        ./main exp4/subexp$i/customer32pur${j}product.csv exp4/subexp$i/customer32pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp4/subexp$i/customer32pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp4.subexp$i.customer32pur$j.log
+        #Execute the following only if j is not 8 or 32
+        if [ $j -ne 32 ]
+        then
+            ./main exp4/subexp$i/customer64pur${j}product.csv exp4/subexp$i/customer64pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp4/subexp$i/customer64pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp4.subexp$i.customer64pur$j.log
+        fi
+        fi
+    done
+done
+
+#exp5
+for i in {1..3}
+do
+    for j in 8 32 128 512 2048
+    do
+        ./main exp5/subexp$i/customer4pur${j}product.csv exp5/subexp$i/customer4pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp5/subexp$i/customer4pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp5.subexp$i.customer4pur$j.log
+        ./main exp5/subexp$i/customer8pur${j}product.csv exp5/subexp$i/customer8pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp5/subexp$i/customer8pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp5.subexp$i.customer8pur$j.log
+        #Execute the following only if j is not 8
+        if [ $j -ne 8 ]
+        then
+        ./main exp5/subexp$i/customer16pur${j}product.csv exp5/subexp$i/customer16pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp5/subexp$i/customer16pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp5.subexp$i.customer16pur$j.log
+        ./main exp5/subexp$i/customer32pur${j}product.csv exp5/subexp$i/customer32pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp5/subexp$i/customer32pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp5.subexp$i.customer32pur$j.log
+        #Execute the following only if j is not 8 or 32
+        if [ $j -ne 32 ]
+        then
+            ./main exp5/subexp$i/customer64pur${j}product.csv exp5/subexp$i/customer64pur${j}customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp5/subexp$i/customer64pur${j}output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv > exp5.subexp$i.customer64pur$j.log
+        fi
+        fi
+    done
+done

@@ -1,0 +1,28 @@
+Time taken to read the files: 9138 microseconds
+Time taken by compute part of the function: 31431 microseconds
+Function completed
+Time taken by function: 31485 microseconds
+Total time taken: 31485 microseconds
+	Command being timed: "./main exp3/subexp3/customer64pur2048product.csv exp3/subexp3/customer64pur2048customer.csv tests_Q2/input_price.csv tests_Q2/input_groups.csv exp3/subexp3/customer64pur2048output.csv tests_Q2/output_price.csv tests_Q2/output_groups.csv tests_Q2/new_hashtags.csv"
+	User time (seconds): 0.03
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 200
+	Voluntary context switches: 1
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
